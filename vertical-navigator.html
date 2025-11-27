@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vertical Navigation</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+  }
+  .sidebar {
+    background-color: #1354a3;
+    width: 250px;
+    height: 100vh;
+    padding: 20px;
+    color: white;
+  }
+  .sidebar h2 {
+    margin-bottom: 40px;
+  }
+  .sidebar a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  .sidebar a:hover, .sidebar a.active {
+    background-color: #125986;
+  }
+</style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>WST 249</h2>
+    <a href="#" class="active">Home</a>
+    <a href="#">About</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Contact</a>
+  </div>
+  <div class="content"></div>
+</body>
+</html>

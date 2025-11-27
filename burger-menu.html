@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Burger Menu</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .navbar {
+    background-color: #105e9d;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .burger {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 60px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+  }
+  .side-menu a {
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #0c4b8e;
+    display: block;
+    font-weight: bold;
+  }
+  .side-menu a:hover {
+    background-color: #f2f2f2;
+  }
+  .closebtn {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="burger" onclick="openMenu()">☰</div>
+  <h2>Burger Menu</h2>
+</div>
+
+<div id="menu" class="side-menu">
+  <div class="closebtn" onclick="closeMenu()">Close ✖</div>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Portfolio</a>
+  <a href="#">Contact</a>
+</div>
+
+<script>
+  function openMenu() {
+    document.getElementById("menu").style.width = "280px";
+  }
+  function closeMenu() {
+    document.getElementById("menu").style.width = "0";
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samsung Galaxy S25 Ultra</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #0a0a0a;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Navigation */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 80px;
+      background-color: rgba(0, 0, 0, 0.8);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      color: #00bcd4;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00bcd4;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 100px 80px 0;
+      background: linear-gradient(to right, #000, #0c0c0c);
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h2 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      color: #00bcd4;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    .hero-text button {
+      background-color: #00bcd4;
+      border: none;
+      color: #fff;
+      padding: 14px 30px;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero-text button:hover {
+      background-color: #0195a7;
+    }
+
+    .hero img {
+      width: 420px;
+      border-radius: 30px;
+      box-shadow: 0 0 20px #00bcd4;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 100px 80px;
+      background-color: #101010;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      text-align: center;
+    }
+
+    .feature {
+      background-color: #1a1a1a;
+      border-radius: 20px;
+      padding: 40px 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 20px #00bcd4;
+    }
+
+    .feature img {
+      width: 100px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    .feature h3 {
+      color: #00bcd4;
+      margin-bottom: 15px;
+    }
+
+    .feature p {
+      color: #bbb;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 40px;
+      background-color: #0a0a0a;
+      color: #777;
+      font-size: 0.9rem;
+      border-top: 1px solid #222;
+    }
+
+    footer a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 15px;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 20px 0;
+      }
+
+      .hero-text {
+        max-width: 100%;
+      }
+
+      .hero img {
+        width: 80%;
+        margin-top: 40px;
+      }
+
+      .features {
+        padding: 60px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <h1>Samsung Galaxy S25 Ultra</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#buy">Buy Now</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Redefine the Future with S25 Ultra</h2>
+      <p>Experience the ultimate in innovation with the Samsung Galaxy S25 Ultra — equipped with an advanced AI camera, ultra-smooth 144Hz display, and lightning-fast Snapdragon processor for a new era of performance.</p>
+      <button id="buy">Pre-Order Now</button>
+    </div>
+    <img src="galaxy-s25-ultra-features-sustainability-mo.jpg" alt="Samsung S25 Ultra">
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="feature">
+      <img src="THUMB_001-kv-product-galaxy-s25ultra-spen-1p.jpg" alt="Camera Feature">
+      <h3>AI-Powered Quad Camera</h3>
+      <p>Capture stunning photos with 200MP clarity, enhanced by AI scene optimization for professional-grade results.</p>
+    </div>
+
+    <div class="feature">
+      <img src="images.jpg" alt="Display Feature">
+      <h3>Dynamic AMOLED 2X Display</h3>
+      <p>Enjoy vivid colors and a buttery-smooth 144Hz refresh rate for immersive viewing and gaming.</p>
+    </div>
+
+    <div class="feature">
+      <img src="Snapdragon-8-Gen-4.jpg" alt="Chipset Feature">
+      <h3>Snapdragon Gen 4 Chipset</h3>
+      <p>Experience unmatched speed and multitasking power with next-gen processing technology.</p>
+    </div>
+
+    <div class="feature">
+      <img src="Galaxy-S22-Ultra-Super-Fast-Charging-3.jpg" alt="Battery Feature">
+      <h3>All-Day Battery + Super Fast Charging</h3>
+      <p>Stay powered from dawn to dusk with a 5000mAh battery and 45W fast charging support.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>© 2025 Samsung Electronics. All Rights Reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+  </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nathaniel Moreno – Creative Digital Designer</title>
+  <link rel="stylesheet" href="morenostyle.css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="logo">Nathaniel Moreno Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <nav>
+        <li><a href="s25ultra.html">Samsung S25 Ultra</a></li>  
+        <li><a href="profile.html">My Profile</a></li>
+        <li><a href="vertical-navigator.html">Vertical navigator</a></li>
+        <li><a href="horizontal-navigation.html">Horizontal navigator</a></li>
+        <li><a href="burger-menu.html">Burger menu</a></li>
+        <li><a href="BOOTSTRAPS5.html">Philippine tour</a></li>
+      </nav>
+      <div class="mobile-menu-toggle" id="mobileMenuToggle">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
+    </div>
+    <div class="hero-content">
+      <h1>Transforming Ideas into Beautiful, Functional Design</h1>
+      <p class="subtitle">I create digital experiences that connect people and technology through thoughtful, human-centered design.</p>
+      <a href="#work" class="cta-button">View My Work</a>
+    </div>
+    <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView()"></div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title fade-in">About Me</h2>
+      <div class="about-content">
+        <img src="nathy.jpg" alt="Nathaniel Moreno" class="about-photo">
+        <div class="about-text slide-in-right">
+          <h3>Hi, I'm Nathaniel Moreno</h3>
+          <p>
+           I am an aspiring IT professional with a strong passion for cybersecurity, network management, and systems administration. As a junior cybersecurity analyst, I am responsible for monitoring network traffic, identifying potential threats, and implementing preventive measures to safeguard organizational data.
+          </p>
+          <p>
+            I also work closely with the cyber ops associate team to analyze security incidents, perform vulnerability assessments, and maintain system integrity across multiple platforms. My experience in operating systems support has strengthened my ability to troubleshoot complex technical issues, manage software updates, and ensure the reliability of both Windows and Linux environments. In addition, I collaborate with network technicians to maintain stable and secure network connections, configure routers and switches, and assist in the implementation of network security protocols.
+          </p>
+          <p>
+            I am highly committed to continuous learning and professional growth, staying updated with the latest developments in cybersecurity and IT infrastructure. My goal is to contribute to a forward-thinking organization where I can apply my technical expertise, problem-solving skills, and attention to detail to protect digital assets and enhance overall system performance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work / Portfolio Section -->
+  <section id="work" class="portfolio">
+    <div class="container">
+      <h2 class="section-title fade-in">Featured Projects</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="Network Technician.png" alt="Network Technician" />
+          <div class="portfolio-content">
+            <h4>Network Technician</h4>
+            <p>Networks keep the digital world connected. Learn how networks work and gain employable skills to start your tech career.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <img src="Operating Systems Support.png" alt="Operating System Support" />
+          <div class="portfolio-content">
+            <h4>Operating System Support</h4>
+            <p>Continue your learning journey by troubleshooting Windows, macOS, and mobile system. improve your customer service skills and prepare for entry level IT support roles.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <img src="Junior Cybersecurity Analyst.png" alt="Junior Cybersecurity Analyst" />
+          <div class="portfolio-content">
+            <h4>Junior Cybersecurity Analyst</h4>
+            <p>Cyber attacks increase with every digital connection made around the world. Learn how to protect and defend an organization and gain employable skills to start your cyber career.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <img src="CyberOps Associate.png" alt="CyberOps Associate" />
+          <div class="portfolio-content">
+            <h4>CyberOps Associate</h4>
+            <p>Detect and respond to cyber threats and prepare for the Cisco Certified CyberOps Associate certification.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="contact-floating-shapes">
+      <div class="contact-shape contact-shape-1"></div>
+      <div class="contact-shape contact-shape-2"></div>
+      <div class="contact-shape contact-shape-3"></div>
+      <div class="contact-shape contact-shape-4"></div>
+    </div>
+    <div class="container">
+      <div class="contact-content">
+        <h2 class="section-title fade-in">Let’s Collaborate</h2>
+        <p class="fade-in">
+          Interested in working together or have a project idea? Reach out — I’d love to hear from you.
+        </p>
+        <form class="contact-form fade-in">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">© 2025 Nathaniel Moreno. All Rights Reserved.</div>
+        <div class="footer-right">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms</a>
+          <a href="#sitemap">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
